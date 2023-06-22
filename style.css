@@ -1,0 +1,22 @@
+* {margin:0; padding:0; box-sizing:border-box; font-style:normal}
+body,html {overflow:auto; font-family:'Noto Sans KR', Dotum, Arial, sans-serif; font-size:14px; color:#666; letter-spacing:-0.025em; word-break:keep-all}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, address {margin:0; padding:0}
+pre {margin:0; padding:0; word-wrap:break-word; white-space:pre-line}
+table {border:0; border-collapse:collapse; border-spacing:0; width:100%}
+fieldset, img {border:0;vertical-align:top}
+ul, li {list-style:none}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal; line-height:1em}
+a {text-decoration:none; cursor:pointer}
+body {position:relative}
+em {font-style:normal}
+a, button {cursor:pointer}
+legend, hr, caption {position:absolute; top:-9990px; left:-9999px; width:1px; height:1px; opacity:0}
+
+
+body {padding:20px;}
+header,footer {display:none;}
+.qaBox {display:flex; flex-direction:column;}
+.qaBox h3 {font-size:26px; font-weight:bold; color:#000; border-bottom:1px solid #eaeaea; margin-bottom:10px; padding-bottom:10px;}
+.qaBox h3 + strong {display:block; font-size:16px; margin:0 0 10px; color:red;}
+.qaBox .q {padding:20px; border:1px solid #ddd; font-size:16px;}
+.qaBox .a {margin-top:15px;}

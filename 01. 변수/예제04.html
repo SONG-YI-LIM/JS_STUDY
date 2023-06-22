@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 4</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        헤더
+    </header>
+    <div class="qaBox">
+        <h3>예제 04</h3>
+        <strong>const, let, var 에 대해 공부 후 진행</strong>
+        <div class="q">
+            <button type="button">클릭</button>
+        </div>
+        <div class="a">
+            <script>
+                $(function(){
+                    let text = "- 버튼 클릭 시 console.log 에 '정답입니다.' 가 노출되려면?"
+                    $(".qaBox .q").each(function(){
+                        $(this).append(`<p>${text}</p>`)
+                    })
+                    $("button").click(function(){
+                        console.log(text);
+                    })
+                })
+            </script>
+            <p>그렇게 생각한 이유: </p>
+        </div>
+    </div>
+    <footer>
+        푸터
+    </footer>
+
+</body>
+</html>

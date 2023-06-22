@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 1</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="qaBox">
+        <h3>예제 01 - 마우스 이벤트</h3>
+        <strong>click 이벤트를와 대입연산자를 공부하신 후 진행하세요.</strong>
+        <div class="q">            
+            - button 을 클릭할때마다 count 의 숫자가 1씩 증가하게 해주세요<br>
+            <button type="button">난 버튼!</button>
+            <p>난 숫자! <span class="count">0</span></p>
+        </div>
+        <div class="a">
+            <script>
+                $(function(){
+                    let count = 0;                    
+                    // $(".count").text(count);
+                })
+            </script>
+        </div>
+    </div>    
+    <footer id="footer"></footer>
+</body>
+</html>

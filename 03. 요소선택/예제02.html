@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 1</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    
+    <div class="qaBox">
+        <h3>예제 02 - 자식요소 접근</h3>
+        <strong>jquery click 이벤트와 children, find 메소드를 공부하고 진행.</strong>
+        <div class="q">            
+            - 뎁을 클릭했을 때 자식요소에 있는 ul 에 class="on" 을 넣어주세요
+            <ul id="list02">
+                <li>
+                    뎁1
+                    <ul>
+                        <li>리스트 1</li>
+                        <li>리스트 2</li>
+                    </ul>
+                </li>
+                <li>
+                    뎁2
+                    <ul>
+                        <li>리스트 3</li>
+                        <li>리스트 4</li>
+                    </ul>
+                </li>
+            </ul>    
+        </div>
+        <div class="a"> 
+            <script>
+                $(function(){
+
+                })
+            </script>
+        </div>
+    </div>   
+    <footer id="footer"></footer>
+</body>
+<style>
+    ul > li {margin-top:15px;}
+    ul > li * {display:block; margin:5px 0;}
+</style>
+</html>

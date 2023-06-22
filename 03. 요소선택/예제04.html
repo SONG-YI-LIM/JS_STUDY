@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 1</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="qaBox">
+        <h3>예제 04 - 형제요소 접근</h3>
+        <strong>jquery click 이벤트와 siblings, next, nextAll, prev, prevAll 메소드를 공부하고 진행.</strong>
+        <div class="q">            
+            - [siblings] wrap01 을 클릭했을때 wrap02,wrap03,wrap04,wrap05 에 color:red 를 넣어주세요.<br>
+            - [siblings] wrap02 을 클릭했을때 wrap03 에 color:green 을 넣어주세요. <br>
+            - [next] wrap03 를 클릭했을때 wrap04 에 color:blue 를 넣어주세요.<br>
+            - [nextAll] wrap04 를 클릭했을때 wrap04안의 p를 제외한 span, strong 에 color:yellow 를 넣어주세요.<br>
+            - [prev] wrap05 의 strong05 을 클릭했을 때 sapn05 의 color:orange; 로 변경해주세요.<br>
+            - [prevAll] wrap06 을 클릭했을 때 wrap01~05 까지 모두 display:none 해주세요.<br><br>
+            <ul id="list04">
+                <li class="wrap01">
+                    <p>p 01</p>
+                    <span>span 01</span>
+                    <strong>strong 01</strong>
+                </li>
+                <li class="wrap02">
+                    <p>p 02</p>
+                    <span>span 02</span>
+                    <strong>strong 02</strong>
+                </li>
+                <li class="wrap03">
+                    <p>p 03</p>
+                    <span>span 03</span>
+                    <strong>strong 03</strong>
+                </li>
+                <li class="wrap04">
+                    <p>p 04</p>
+                    <span>span 04</span>
+                    <strong>strong 04</strong>
+                </li>
+                <li class="wrap05">
+                    <p>p 05</p>
+                    <span>span 05</span>
+                    <strong>strong 05</strong>
+                </li>
+                <li class="wrap06">
+                    <p>p 06</p>
+                    <span>span 06</span>
+                    <strong>strong 06</strong>
+                </li>
+            </ul>    
+        </div>
+    </div>   
+    <footer id="footer"></footer>
+</body>
+<style>
+    ul > li {margin-top:15px;}
+    ul > li * {display:block; margin:5px 0;}
+</style>
+</html>

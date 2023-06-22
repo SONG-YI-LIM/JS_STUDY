@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 1</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="qaBox">
+        <h3>예제 03 - 부모요소 접근</h3>
+        <strong>jquery click 이벤트와 parent, parents, parentsUntil, closest 메소드를 공부하고 진행.</strong>
+        <div class="q">
+            - 아래의 기능을 만들 때 클래스를 추가해서 선택은 불가능합니다 <br>
+            - [parent] 리스트1 클릭했을때 리스트1의 부모요소인 ul 에 class="on1" 을 넣어주세요.<br>
+            - [parents] 리스트2 클릭했을때 부모요소인 ul 모두에게 class="on2" 을 넣어주세요.<br>
+            - [parentsUntil] 리스트5 클릭했을때 해당 부모의 ul 과 그의 부모 li 까지 border:1px solid red 를 넣어주세요.<br>
+            - [closest] 리스트7 클릭했을때 최상위 요소(list03)에 color:blue 를 넣어주세요.<br>
+            <ul id="list03">
+                <li>
+                    뎁1
+                    <ul>
+                        <li class="c01">리스트 1</li>
+                        <li class="c02">리스트 2</li>
+                    </ul>
+                    <ul>
+                        <li>리스트 3</li>
+                        <li>리스트 4</li>
+                    </ul>
+                    <ul>
+                        <li class="c05">리스트 5</li>
+                        <li>리스트 6</li>
+                    </ul>
+                </li>
+                <li>
+                    뎁2
+                    <ul>
+                        <li class="c07">리스트 7</li>
+                        <li>리스트 8</li>
+                    </ul>
+                    <ul>
+                        <li>리스트 9</li>
+                        <li>리스트 10</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="a">
+            <script>
+                $(function(){
+
+                })
+            </script>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+<style>
+    ul > li {margin-top:15px;}
+    ul > li * {display:block; margin:5px 0;}
+</style>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 1</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="qaBox">
+        <h3>예제 00 - CSS 선택자</h3>
+        <strong>jquery click 이벤트와 css메소드를 공부하고 진행.</strong>
+        <div class="q">            
+            - 버튼을 클릭했을 때 span.change01의 태그에 폰트사이즈를 60으로 변경해주세요.
+            <button type="button" class="select01">클릭</button>
+            <span class="change01">변경해주세요!</span>
+        </div>        
+        <div class="a">     
+            <script>
+                $(".select01").click(function(){
+    
+                })
+            </script>
+        </div>
+    </div>
+    <div class="qaBox">
+        <h3>예제 02-02 - CSS 선택자</h3>
+        <div class="q">            
+            - 버튼을 클릭했을 때 span.change02의 태그에 배경색상 #000, 컬러 #fff 로 변경해주세요.
+            <button type="button" class="select02">클릭</button>
+            <span class="change02">변경해주세요!</span>
+        </div>
+        <div class="a">     
+            <script>
+                $(".select02").click(function(){
+    
+                })
+            </script>
+        </div>
+    </div>    
+    <div class="qaBox">
+        <h3>예제 02-03 - 속성 성택자 </h3>
+        <div class="q">            
+            - 버튼을 클릭했을 때 span.change03안의 이미지 src값을 /img/test.png 로 변경해주세요. 
+            <button type="button" class="select03">클릭</button>
+            <span class="change03">
+                <img src="변경위치">
+            </span>
+        </div>
+        <div class="a">     
+            <script>
+                $(".select03").click(function(){
+    
+                })
+            </script>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>
