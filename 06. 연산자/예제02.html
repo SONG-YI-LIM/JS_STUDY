@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 1</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="qaBox">
+        <h3>예제02</h3>
+        <strong>연산자를 공부하여 풀어보세욥</strong>
+        <div class="q">            
+            - 01. 할당 연산자를 이해한 후 진행
+        </div>
+        <div class="a">
+            <script>
+                $(function(){
+                    // 01. 변수 z1, z2에 들어가야할 값은?
+                    let w,o,c,z1,z2;
+                    w = o = c = z1 + z2;
+                    console.log(w, o, c); // w,o,c 각각 2가 노출되어야합니다.
+                    
+                    // 02. 식을 풀어주세요.
+                    let b;
+                    let a = b;
+                    a = a + 5;
+                    a = a * 10;
+                    
+                    console.log(a); // a 에 120이 노출되어야합니다.
+                })
+            </script>
+        </div>
+    </div>    
+    <footer id="footer"></footer>
+</body>
+</html>
+

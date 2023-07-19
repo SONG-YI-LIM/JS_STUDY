@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="qaBox">
+        <h3>전체활용예제 01 - 탭</h3>
+        <strong>01(변수)~08(조건문)을 사용하여 풀어주세요!</strong>
+        <div class="q">            
+            01. tabWrap 각각의 리스트를 클릭했을 때 내가 클릭한 리스트의 순서(순서는 index() 로 값을 구하면 됩니다.)를 구해서 console 에 노출해주세요. <br>
+            02. 01번을 성공했다면 리스트를 클릭했을 때 tabItem 의 아이템을 전부 hide 해주고 내가 클릭한 리스트의 순서에 아이템을 show 해주세요. <br>
+            03. 02번을 성공했다면 리스트를 클릭했을 때 순서에 맞는 tabItem 안에 span 태그가 없을경우 tabItem 에 itemNone 클래스도 넣어주세요.
+            사용: each(), click(), index(), eq(), hide(), show(), if(), length, find()
+            <div class="tabWrap tabWrap1">
+                <div class="tabList">
+                    <strong>탭리스트 1</strong>
+                    <ul>
+                        <li>리스트 1</li>
+                        <li>리스트 2</li>
+                        <li>리스트 3</li>
+                        <li>리스트 4</li>
+                    </ul>
+                </div>
+                <div class="tabItem">
+                    <strong>탭 아이템 1</strong>
+                    <ul>
+                        <li>아이템 1</li>
+                        <li>아이템 2 <span>텍스트</span></li>
+                        <li>아이템 3</li>
+                        <li>아이템 4 <span>텍스트</span></li>                    
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="tabWrap tabWrap2">
+                <div class="tabList">
+                    <strong>탭리스트 2</strong>
+                    <ul>
+                        <li>리스트 1</li>
+                        <li>리스트 2</li>
+                        <li>리스트 3</li>
+                        <li>리스트 4</li>
+                    </ul>
+                </div>
+                <div class="tabItem">
+                    <strong>탭 아이템 2</strong>
+                    <ul>
+                        <li>아이템 1</li>
+                        <li>아이템 2 <span>텍스트</span></li>
+                        <li>아이템 3</li>
+                        <li>아이템 4 <span>텍스트</span></li>                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="a">            
+            <script> 
+            
+            </script>
+        </div>
+    </div>    
+    <footer id="footer"></footer>
+</body>
+<style>
+    .tabList strong, .tabItem strong {display:block; color:#000; margin:30px 0 10px;}
+    .tabList li {margin:5px 0; border:1px solid #eaeaea; padding:10px;}  
+    .tabItem li:not(:first-child) {display:none;}
+</style>  
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="qaBox">
+        <h3>전체활용예제 02 - 패밀리 사이트 응용</h3>
+        <strong>01(변수)~08(조건문)을 사용하여 풀어주세요!</strong>
+        <div class="q">            
+            - 아래 패밀리사이트의 기능을 적용하세요 <br><br>
+            
+            01. familySite 의 linkeBox 를 클릭하면 <br>
+            ul 이 display="none" 일경우 ul 이 slideDown() 이 되고 <br>
+            ul 이 display="block" 일경우 slideUp()이 됩니다.<br>  
+            <br><br>
+
+            02. ul > li > a 를 클릭할 때 <br>
+            클릭한 a의 텍스트를 linkBox > strong 에 삽입, data-href 값을 linkBox > a 의 href 에 삽입<br>
+            그리고 클릭한 a의 텍스트가 네이버,다음 일 경우 linkBox 의 strong 에 color 를 red <br>  
+            구글일경우 green 으로 적용합니다.<br>
+            <br><br>
+            
+            <div class="familySite">
+                <div class="linkBox">
+                    <strong>텍스트</strong>
+                    <a href="#">이동</a>
+                </div>
+                <ul>
+                    <li><a data-href="https://www.naver.com/">네이버</a></li>
+                    <li><a data-href="https://www.daum.net/">다음</a></li>
+                    <li><a data-href="https://www.google.co.kr/?hl=ko">구글</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="a">            
+            <script> 
+            
+            </script>
+        </div>
+    </div>    
+    <footer id="footer"></footer>
+</body>
+<style>
+    .linkBox {display:flex; align-items:center; justify-content:space-between;}
+    .familySite {border:2px solid #000; padding:15px;}
+    .familySite ul {display:none; border:1px solid #000;}
+    .familySite ul li {margin:3px 0 0 0;}
+    .familySite ul li:not(:last-child) {border-bottom:1px solid #000;}
+    .familySite ul li a {display:block; padding:5px;}
+</style>  
+</html>
+

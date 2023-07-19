@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 5</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="qaBox">
+        <h3>예제06</h3>
+        <strong>each문과 index()를 공부 후 풀어보세요!</strong>
+        <div class="q">            
+            리스트를 클릭했을 때 내가 클릭한 리스트의 순서를 구해서 console 에 노출해주세요.                        
+            <div class="tabList">
+                <strong>탭리스트</strong>
+                <ul>
+                    <li>리스트 1</li>
+                    <li>리스트 2</li>
+                    <li>리스트 3</li>
+                    <li>리스트 4</li>
+                </ul>
+            </div>
+            <div class="tabItem">
+                <strong>탭 아이템</strong>
+                <ul>
+                    <li>아이템 1</li>
+                    <li>아이템 2</li>
+                    <li>아이템 3</li>
+                    <li>아이템 4</li>                    
+                </ul>
+            </div>
+        </div>
+        <div class="a">            
+            <script> 
+                $(".tabList ul li").click(function(){
+                    let ind = $(this).index();
+                    console.log(ind);
+                })
+            </script>
+        </div>
+    </div>    
+    <footer id="footer"></footer>
+</body>
+<style>
+    .tabList strong, .tabItem strong {display:block; color:#000; margin:30px 0 10px;}
+    .tabList li {margin:5px 0; border:1px solid #eaeaea; padding:10px;}  
+    .tabItem li:not(:first-child) {display:none;}
+</style>  
+</html>
+
