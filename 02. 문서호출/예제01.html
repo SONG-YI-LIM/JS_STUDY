@@ -16,8 +16,30 @@
         <div class="q">            
             - $(window).ready 와 $(window).load 와 $(document).ready 의 차이점을 생각나는대로 쓰시오
         </div>
-        <div class="a">     
-            <p>작성 위치: </p>
+        <div class="a">
+            <style>
+                dl {margin-top:20px}
+                dl dt {font-weight:700}
+            </style>
+            <p>
+                작성 위치: <br>
+                <dl>
+                    <dt>$(document).ready</dt>
+                    <dd>DOM이 로드된 시점</dd>
+                    <dd>$(function(){}); 같다.</dd>
+                    <dd>외부 리소스 및 이미지 로딩과 상관없이 DOM만 로드되면 바로 실행된다.</dd>
+                    <dd>중복 사용해도 순서대로 모두 실행된다.</dd>
+                </dl>
+                <dl>
+                    <dt>$(window).load</dt>
+                    <dd>페이지의 모든 요소들이 로드된 이후에 호출</dd>
+                    <dd>페이지의 모든 요소들이 로드되어야 실행된다.</dd>
+                    <dd>한 페이지에서 하나의 window.load() 함수만 실행된다.</dd>
+                    <dd>가장 나중에 호출된 함수만 실행된다.</dd>
+                    <dd>페이지 안의 이미지나 외부 파일이 로드될 때까지 기다린 후 실행되어 로딩 시간이 길어질 수 있다.</dd>
+                    <dd>&lt;body onload=""&gt; 이벤트를 사용하면 모든 window.load() 가 실행되지 않는다.</dd>
+                </dl>
+            </p>
         </div>
     </div>    
     <footer id="footer"></footer>
