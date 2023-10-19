@@ -36,7 +36,9 @@
         <div class="a"> 
             <script>
                 $(function(){
-
+                    $('#list02').on('click', '> li', function(){
+                        $(this).find('> ul').addClass('on');
+                    });
                 })
             </script>
         </div>

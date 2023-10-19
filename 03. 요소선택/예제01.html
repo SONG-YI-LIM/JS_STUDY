@@ -45,7 +45,9 @@
         <div class="a">   
             <script>
                 $(function(){
-
+                    $('.select').on('click', function(){
+                        $('#list01 li:first-child').find('ul li:last-child').css({'color':'red'});
+                    });
                 })
             </script>
         </div>

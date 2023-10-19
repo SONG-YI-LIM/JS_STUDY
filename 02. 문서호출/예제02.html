@@ -21,9 +21,14 @@
             - $(document).ready(function(){ console.log("d"); })<br><br>
             위의 코드를 실행했을때 a,b,c,d 는 어느 순서로 노출되는지 작성하시오.
         </div>
-        
+        <script>
+            $(window).ready(function(){console.log("a")})
+            $(window).load(function(){console.log("b")})
+            $(window).on("load", function(){console.log("c")})
+            $(document).ready(function(){console.log("d")})
+        </script>
         <div class="a">     
-            <p>작성 위치: d b</p>
+            <p>작성 위치:a d b c</p>
         </div>
     </div>
     <footer id="footer"></footer>
