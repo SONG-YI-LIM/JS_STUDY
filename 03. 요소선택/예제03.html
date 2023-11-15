@@ -51,7 +51,25 @@
         <div class="a">
             <script>
                 $(function(){
+                    // [parent] 리스트1 클릭했을때 리스트1의 부모요소인 ul 에 class="on1" 을 넣어주세요.
+                    $('.c01').on('click', function(){
+                        $(this).parent().addClass('on1');
+                    });
 
+                    // [parents] 리스트2 클릭했을때 부모요소인 ul 모두에게 class="on2" 을 넣어주세요.
+                    $('.c02').on('click', function(){
+                        $(this).parents('ul').addClass('on2');
+                    });
+
+                    // [parentsUntil] 리스트5 클릭했을때 해당 부모의 ul 과 그의 부모 li 까지 border:1px solid red 를 넣어주세요.
+                    $('.c05').on('click', function(){
+                        $(this).parentsUntil('#list03').css({'border':'1px solid red'});
+                    });
+
+                    // [closest] 리스트7 클릭했을때 최상위 요소(list03)에 color:blue 를 넣어주세요.
+                    $('.c07').on('click', function(){
+                        $(this).closest('#list03').css({'color':'blue'});
+                    });
                 })
             </script>
         </div>

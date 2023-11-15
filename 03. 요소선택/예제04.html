@@ -15,7 +15,7 @@
         <strong>jquery click 이벤트와 siblings, next, nextAll, prev, prevAll 메소드를 공부하고 진행.</strong>
         <div class="q">            
             - [siblings] wrap01 을 클릭했을때 wrap02,wrap03,wrap04,wrap05 에 color:red 를 넣어주세요.<br>
-            - [siblings] wrap02 을 클릭했을때 wrap03 에 color:green 을 넣어주세요. <br>
+            - [siblings] wrap02 을 클릭했을때 wrap03 에 color:green 을 넣어주세요.<br>
             - [next] wrap03 를 클릭했을때 wrap04 에 color:blue 를 넣어주세요.<br>
             - [nextAll] wrap04 를 클릭했을때 wrap04안의 p를 제외한 span, strong 에 color:yellow 를 넣어주세요.<br>
             - [prev] wrap05 의 strong05 을 클릭했을 때 sapn05 의 color:orange; 로 변경해주세요.<br>
@@ -52,6 +52,41 @@
                     <strong>strong 06</strong>
                 </li>
             </ul>    
+        </div>
+        <div class="a">
+            <script>
+                $(function(){
+                    // [siblings] wrap01 을 클릭했을때 wrap02,wrap03,wrap04,wrap05 에 color:red 를 넣어주세요.
+                    $('.wrap01').on('click', function(){
+                        $(this).siblings().css({'color':'red'});
+                    });
+
+                    // [siblings] wrap02 을 클릭했을때 wrap03 에 color:green 을 넣어주세요.
+                    $('.wrap02').on('click', function(){
+                        $(this).siblings('.wrap03').css({'color':'green'});
+                    });
+
+                    // [next] wrap03 를 클릭했을때 wrap04 에 color:blue 를 넣어주세요.
+                    $('.wrap03').on('click', function(){
+                        $(this).next().css({'color':'blue'});
+                    });
+
+                    // [nextAll] wrap04 를 클릭했을때 wrap04안의 p를 제외한 span, strong 에 color:yellow 를 넣어주세요.
+                    $('.wrap04').on('click', function(){
+                        $(this).find('p').nextAll().css({'color':'yellow'});
+                    });
+
+                    // [prev] wrap05 의 strong05 을 클릭했을 때 sapn05 의 color:orange; 로 변경해주세요.
+                    $('.wrap05').on('click', 'strong', function(){
+                        $(this).prev().css({'color':'orange'});
+                    });
+
+                    // [prevAll] wrap06 을 클릭했을 때 wrap01~05 까지 모두 display:none 해주세요.
+                    $('.wrap06').on('click', function(){
+                        $(this).prevAll().css({'display':'none'});
+                    });
+                });
+            </script>
         </div>
     </div>   
     <footer id="footer"></footer>
