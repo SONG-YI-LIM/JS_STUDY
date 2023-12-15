@@ -24,6 +24,17 @@
         <div class="a">
             <script>
                 $(function(){
+                    $('.btn').on({
+                        mouseenter : function(){
+                            $(this).css({"background":"red"});
+                        },
+                        mouseleave : function(){
+                            $(this).css({"background":"blue"});
+                        },
+                        click : function(){
+                            $(this).addClass('on');
+                        }
+                    });
                 })
             </script>
         </div>

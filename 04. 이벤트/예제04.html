@@ -28,8 +28,11 @@
         <div class="a">
             <script>
                 $(function(){
-
-                })
+                    $('.box').mouseenter(function(){
+                        $(this).parent().css({"position":"relative"});
+                        $(this).css({"position":"absolute", "top":"0", "left":"0"});
+                    });
+                });
             </script>
         </div>
     </div>    

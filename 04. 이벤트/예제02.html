@@ -21,6 +21,15 @@
             </div>
         </div>
         <div class="a">
+            <script>
+                $(function(){
+                    $('.box').mousedown(function(){
+                        $(this).css({"background":"#000"});
+                    });
+                    $('.box').mouseup(function(){
+                        $(this).css({"background":"red"});
+                    });
+                });
             </script>
         </div>
     </div>    

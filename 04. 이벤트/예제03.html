@@ -23,8 +23,13 @@
         <div class="a">
             <script>
                 $(function(){
-                    
-                })
+                    $('.box').mouseenter(function(){
+                        $(this).css({"background":"#000"});
+                    });
+                    $('.box').mouseleave(function(){
+                        $(this).css({"background":"green"});
+                    });
+                });
             </script>
         </div>
     </div>    

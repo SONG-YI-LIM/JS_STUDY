@@ -28,7 +28,12 @@
         <div class="a">
             <script>
                 $(function(){
-                })
+                    let $src = "/우리씨앤씨/퍼블팀짱.png";
+                    $('.box1 img').attr('src', $src);
+                    $('.btn1').on('click', function(){
+                        $('.box2 img').attr('src', $src);
+                    });
+                });
             </script>
         </div>
     </div>    

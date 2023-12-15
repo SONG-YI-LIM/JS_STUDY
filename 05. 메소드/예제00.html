@@ -39,7 +39,20 @@
         </div>
         <div class="a">
             <script>
-                
+                $(function(){
+                    $('.btn1').on('click', function(){
+                        $('.box').addClass('boxOn');
+                    });
+                    $('.btn2').on('click', function(){
+                        $('.box').removeClass('box');
+                    });
+                    $('.btn3').on('click', function(){
+                        $('.boxOn').toggleClass('active');
+                    });
+                    $('.btn4').on('click', function(){
+                        $('.boxOn').removeClass('boxOn').addClass('box');
+                    });
+                });
             </script>
         </div>
     </div>    

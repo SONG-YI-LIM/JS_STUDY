@@ -30,7 +30,14 @@
         <div class="a">
             <script>
                 $(function(){
-                })
+                    $('.btn1').on('click', function(){
+                        $('.box1 > p').text('박스내용');
+                    });
+                    $('.btn2').on('click', function(){
+                        let $text = $('.box1 > p').text();
+                        $('.box2 > p').text($text);
+                    });
+                });
             </script>
         </div>
     </div>    

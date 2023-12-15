@@ -28,7 +28,12 @@
         <div class="a">
             <script>
                 $(function(){
-                })
+                    let $css = {"width":"300px", "height":"300px"};
+                    $('.box1').css($css);
+                    $('.btn1').on('click', function(){
+                        $('.box2').css($css);
+                    });
+                });
             </script>
         </div>
     </div>    

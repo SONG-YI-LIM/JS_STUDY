@@ -29,7 +29,13 @@
         <div class="a">
             <script>
                 $(function(){
-                })
+                    $('.btn1').on('click', function(){
+                        $('.box2').html($('.box1 > p'));
+                    });
+                    $('.btn2').on('click', function(){
+                        $('.box2').html(`<span>성공</span>`);
+                    });
+                });
             </script>
         </div>
     </div>    

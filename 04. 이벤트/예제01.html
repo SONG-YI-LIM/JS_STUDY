@@ -21,8 +21,9 @@
         <div class="a">
             <script>
                 $(function(){
-                    let count = 0;                    
-                    // $(".count").text(count);
+                    $('button').on('click', function(){
+                        $('.count').text(parseInt($('.count').text()) + 1);
+                    });
                 })
             </script>
         </div>
