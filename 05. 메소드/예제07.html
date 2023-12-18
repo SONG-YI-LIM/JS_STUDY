@@ -38,7 +38,23 @@
         </div>
         <div class="a">
             <script>
-                
+                $(function(){
+                    $('.btn1').on('click', function(){
+                        $('.box').wrap('<div class="boxWrap"></div>');
+                    });
+
+                    $('.btn2').on('click', function(){
+                        $('.boxWrap').wrapAll('<div class="boxWraAllp"></div>');
+                    });
+
+                    $('.btn3').on('click', function(){
+                        $('.box').wrapInner('<p class="text"></p>');
+                    });
+
+                    $('.btn4').on('click', function(){
+                        $('.box').unwrap();
+                    });
+                });
             </script>
         </div>
     </div>    

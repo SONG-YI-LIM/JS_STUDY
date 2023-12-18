@@ -26,7 +26,19 @@
         </div>
         <div class="a">
             <script>
-                
+                $(function(){
+                    $('.btn1').on('click', function(){
+                        $('.box1').find('input').attr('type','radio');
+                    });
+
+                    $('.box1').on('mouseover', function(){
+                        $(this).find('input').attr('type','text');
+                    });
+                    
+                    $('.btn2').on('click', function(){
+                        $('.box1').find('input').removeAttr('type');
+                    });
+                });
             </script>
         </div>
     </div>    

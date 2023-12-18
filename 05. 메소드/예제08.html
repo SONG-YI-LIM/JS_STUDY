@@ -48,7 +48,25 @@
         </div>
         <div class="a">
             <script>
-                
+                $(function(){
+                    $('.btn1').on('click', function(){
+                        $('.chk1 input').prop("checked", true);
+                    });
+
+                    $('.btn2').on('click', function(){
+                        $('span[class^="chk"] input').prop("checked", false);
+                        $('.chk2 input').prop("checked", true);
+                    });
+
+                    $('.btn3').on('click', function(){
+                        $('.chk3 input').prop("checked", true);
+                        setTimeout("alert('유감');", 100);
+                    });
+
+                    $('.btn4').on('click', function(){
+                        $('span[class^="chk"] input').prop("checked", true);
+                    });
+                });
             </script>
         </div>
     </div>    

@@ -28,7 +28,25 @@
         <div class="a">
             <script>
                 $(function(){
-                })
+                    $('.box1').append(`
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    `);
+
+                    $('.btn1').on('click', function(){
+                        $('.box1').find('ul').prepend(`<p>안녕하세요.</p>`);
+                    });
+                    $('.btn2').on('click', function(){
+                        $('.box1').find('ul').append(`<p>감사해요.</p>`);
+                    });
+
+                    $('.box1').on('click', 'p', function(){
+                        $(this).remove();
+                    });
+                });
             </script>
         </div>
     </div>    
